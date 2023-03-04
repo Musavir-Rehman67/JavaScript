@@ -1,4 +1,4 @@
-// Primitive(call by value)
+// Primitive(call by value)(copy)
 
 //  7 types: String,Number,Boolean,null,undefined,Symbol(unique),BigInt
 
@@ -38,3 +38,33 @@ console.log(typeof id);
 
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+//Stack(Primitive),Heap(Non-Primitive)
+
+let myName = "Musavirrehman"
+
+let anotherName = myName
+anotherName = "musa"
+
+console.log(anotherName);
+console.log(myName);
+
+
+let userOne = {
+    email:"musa@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = 'user@google.com'
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+console.log()
